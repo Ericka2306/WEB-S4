@@ -35,6 +35,7 @@
             <div class="form-group mt-3">
                 <label for="nouveau_plat">Ajouter un nouveau plat</label>
                 <select class="form-control" id="nouveau_plat" name="plat">
+                    <option value="">Aucun plat sélectionné</option>    
                     <!-- Options de sélection des plats -->
                     <?php foreach ($tous_plats as $plat) { ?>
                         <option value="<?php echo $plat->id; ?>"><?php echo $plat->nom; ?></option>

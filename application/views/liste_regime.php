@@ -14,6 +14,8 @@
                 </div>
             </div>
         <?php } ?>
+        <a href="<?php echo base_url('ControllerBack/create_regime'); ?>">Ajouter un regime</a>
+
     </div>
 </
 

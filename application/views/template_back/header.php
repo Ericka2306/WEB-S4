@@ -59,29 +59,11 @@ https://templatemo.com/tm-571-hexashop
                         <!-- ***** Logo End ***** -->
                         <!-- ***** Menu Start ***** -->
                         <ul class="nav">
-                            <li class="scroll-to-section"><a href="index.html" class="active">Home</a></li>
-                            <li class="scroll-to-section"><a href="index.html">Men's</a></li>
-                            <li class="scroll-to-section"><a href="index.html">Women's</a></li>
-                            <li class="scroll-to-section"><a href="index.html">Kid's</a></li>
-                            <li class="submenu">
-                                <a href="javascript:;">Pages</a>
-                                <ul>
-                                    <li><a href="about.html">About Us</a></li>
-                                    <li><a href="products.html">Products</a></li>
-                                    <li><a href="single-product.html">Single Product</a></li>
-                                    <li><a href="contact.html">Contact Us</a></li>
-                                </ul>
-                            </li>
-                            <li class="submenu">
-                                <a href="javascript:;">Features</a>
-                                <ul>
-                                    <li><a href="#">Features Page 1</a></li>
-                                    <li><a href="#">Features Page 2</a></li>
-                                    <li><a href="#">Features Page 3</a></li>
-                                    <li><a rel="nofollow" href="https://templatemo.com/page/4" target="_blank">Template Page 4</a></li>
-                                </ul>
-                            </li>
-                            <li class="scroll-to-section"><a href="index.html">Explore</a></li>
+                            <li class="scroll-to-section"><a href="<?php echo base_url('#'); ?>" class="active">Programme</a></li>
+                            <li class="scroll-to-section"><a href="<?php echo base_url('ControllerBack/liste_regime'); ?>">Regime</a></li>
+                            <li class="scroll-to-section"><a href="<?php echo base_url('ControllerBack/liste_plat'); ?>">Plat</a></li>
+                            <li class="scroll-to-section"><a href="<?php echo base_url('ControllerBack/liste_sport'); ?>">Sport</a></li>
+                            <li class="scroll-to-section"><a href="<?php echo base_url('ControllerBack/liste_exercice'); ?>">Exercice</a></li>
                         </ul>        
                         <a class='menu-trigger'>
                             <span>Menu</span>
