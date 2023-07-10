@@ -29,6 +29,8 @@ TemplateMo 571 Hexashop
 https://templatemo.com/tm-571-hexashop
 
 -->
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+   
     </head>
     
     <body>
@@ -94,7 +96,7 @@ https://templatemo.com/tm-571-hexashop
 
     <!-- ***** Main Banner Area Start ***** -->
     <div class="page-heading" id="top">
-        <div class="container">
+        <!-- <div class="container">
             <div class="row">
                 <div class="col-lg-12">
                     <div class="inner-content">
@@ -103,5 +105,5 @@ https://templatemo.com/tm-571-hexashop
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
     </div>
