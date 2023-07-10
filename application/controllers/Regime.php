@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Welcome extends CI_Controller {
+class Regime extends CI_Controller {
 
 	/**
 	 * Index Page for this controller.
@@ -28,16 +28,8 @@ class Welcome extends CI_Controller {
 		$data['page']='contact';
 		$this->load->view('template/template',$data);
 	}	
-	public function program(){
-		$data['page']='liste_program';
-		$this->load->model('Regime');
-		$data['regime']=$this->Regime->select_regime();
-		$this->load->view('template/template',$data);
-	}	
-	public function regime(){
-		$data['page']='liste_program';
-		//$this->load->model('Regime');
-		//$data['regimes']=$this->Regime->select_regime();
-		$this->load->view('template/template',$data);
-	}	
+    public function Regime(){
+        $this->load->view('template/program');
+    }	
 }
+?>
