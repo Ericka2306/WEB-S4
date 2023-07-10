@@ -7,7 +7,6 @@
                     <img src="chemin_vers_l_image" class="card-img-top" alt="Image du régime">
                     <div class="card-body">
                         <h5 class="card-title"><?php echo $sport->nom; ?></h5>
-                        <p class="card-text">Prix : <?php echo $sport->prix; ?></p>
                         <p class="card-text">Durée : <?php echo $sport->duree; ?></p>
                         <a href="<?php echo base_url('ControllerBack/details_sport/'.$sport->id); ?>" class="btn btn-primary">Voir Détails</a>
                     </div>
