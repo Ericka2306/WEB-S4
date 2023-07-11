@@ -96,7 +96,6 @@
       </div>
     </div>
   </div>
-  <script src="https://kit.fontawesome.com/your-fontawesome-kit.js"></script>
 </body>
 
 </html>

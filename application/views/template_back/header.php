@@ -61,12 +61,13 @@ https://templatemo.com/tm-571-hexashop
                         <!-- ***** Logo End ***** -->
                         <!-- ***** Menu Start ***** -->
                         <ul class="nav">
-                            <li class="scroll-to-section"><a href="<?php echo base_url('#'); ?>" class="active">Programme</a></li>
+                            <li class="scroll-to-section"><a href="<?php echo base_url('#'); ?>" >Programme</a></li>
                             <li class="scroll-to-section"><a href="<?php echo base_url('ControllerBack/liste_regime'); ?>">Regime</a></li>
                             <li class="scroll-to-section"><a href="<?php echo base_url('ControllerBack/liste_plat'); ?>">Plat</a></li>
                             <li class="scroll-to-section"><a href="<?php echo base_url('ControllerBack/liste_sport'); ?>">Sport</a></li>
                             <li class="scroll-to-section"><a href="<?php echo base_url('ControllerBack/liste_exercice'); ?>">Exercice</a></li>
                             <li class="scroll-to-section"><a href="<?php echo base_url('statController/liste_statistique'); ?>">Statistiques</a></li>
+                            <li class="scroll-to-section"><a href="<?php echo base_url('log_out'); ?>"><i class="fas fa-sign-out-alt"></i> Déconnexion</a></li>
                         </ul>        
                         <a class='menu-trigger'>
                             <span>Menu</span>

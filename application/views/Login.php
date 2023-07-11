@@ -60,11 +60,16 @@
 </head>
 
 <body>
+  
   <div class="container">
+  
     <div class="row justify-content-center">
+    
       <div class="col-md-6">
+      
         <div class="login-form">
           <h2 class="mb-4"><i class="fas fa-dumbbell mr-2"></i>ShapeUp</h2>
+
           <form action="log_in_validation" method="POST">
             <div class="form-group">
               <label for="email"><i class="fas fa-envelope mr-2"></i> E-Mail</label>
@@ -76,12 +81,14 @@
             </div>
             <button type="submit" class="btn btn-primary"><i class="fas fa-sign-in-alt mr-2"></i> Login</button>
           </form>
+          
           <p class="mt-3 text-center">Vous n'avez pas de compte ? <a href="sign_up">S'inscrire</a></p>
         </div>
       </div>
     </div>
+    <p>admin : user1@gmail.com ; mdp : user1 </p>
+    <p>client : user2@gmail.com ; mdp : user2</p> 
   </div>
-  <script src="https://kit.fontawesome.com/your-fontawesome-kit.js"></script>
 </body>
 
 </html>
