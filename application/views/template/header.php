@@ -63,8 +63,6 @@ https://templatemo.com/tm-571-hexashop
                         <ul class="nav">
 
 
-
-
                             <li class="scroll-to-section"><a href="<?php echo site_url('ProfilController/pdf') ?>">Exporter Programme</a></li>
                             <li class="scroll-to-section"><a href="<?php echo site_url('Control_code/insert_code') ?>">Porte-monnaie</a></li>
                             <li class="scroll-to-section"><a href="<?php echo site_url('Welcome') ?>">Accueil</a></li>
@@ -73,7 +71,6 @@ https://templatemo.com/tm-571-hexashop
                             <li class="scroll-to-section"><a href="<?php echo base_url('log_out'); ?>"><i class="fas fa-sign-out-alt"></i> Déconnexion</a></li>
 
                         </ul>        
-
                         <a class='menu-trigger'>
                             <span>Menu</span>
                         </a>
