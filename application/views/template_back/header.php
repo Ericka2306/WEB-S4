@@ -26,6 +26,9 @@
     <link rel="stylesheet" href="<?php echo base_url()?>assets/css/owl-carousel.css">
 
     <link rel="stylesheet" href="<?php echo base_url()?>assets/css/lightbox.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
 <!--
 
 TemplateMo 571 Hexashop
