@@ -156,52 +156,5 @@ class Profil extends CI_Model{
         $pdf->Output('programme.pdf', 'D');
     }
 
-    /*public function uploadImages()
-    {
-    // Vérifier s'il y a des fichiers sélectionnés
-    if (!empty($_FILES['images']['name'][0])) {
-        // Configuration des paramètres d'upload
-        $config['upload_path'] = './uploads/'; // Chemin de destination pour enregistrer les images
-        $config['allowed_types'] = 'gif|jpg|jpeg|png'; // Types de fichiers autorisés
-        $config['max_size'] = 2048; // Taille maximale du fichier en kilo-octets (2 Mo)
-
-        // Charger la bibliothèque d'upload
-        $this->load->library('upload', $config);
-
-        $uploadedImages = [];
-
-        // Traiter chaque image téléchargée
-        foreach ($_FILES['images']['name'] as $index => $filename) {
-            $_FILES['image']['name'] = $_FILES['images']['name'][$index];
-            $_FILES['image']['type'] = $_FILES['images']['type'][$index];
-            $_FILES['image']['tmp_name'] = $_FILES['images']['tmp_name'][$index];
-            $_FILES['image']['error'] = $_FILES['images']['error'][$index];
-            $_FILES['image']['size'] = $_FILES['images']['size'][$index];
-
-            // Vérifier si le téléchargement a réussi
-            if ($this->upload->do_upload('image')) {
-                // Récupérer les informations sur le fichier téléchargé
-                $uploadData = $this->upload->data();
-                $fileFullName = $uploadData['file_name']; // Nom du fichier complet
-
-                // Faire quelque chose avec le fichier téléchargé (par exemple, enregistrer le nom du fichier en base de données)
-
-                // Ajouter le nom du fichier à la liste des images téléchargées
-                $uploadedImages[] = $fileFullName;
-            } else {
-                // Afficher les erreurs de téléchargement
-                $uploadError = $this->upload->display_errors();
-                echo "Erreur lors du téléchargement de l'image : " . $uploadError;
-            }
-        }
-
-        // Afficher un message de succès avec la liste des images téléchargées
-        echo "Les images suivantes ont été téléchargées avec succès : " . implode(", ", $uploadedImages);
-    } else {
-        // Aucun fichier sélectionné
-        echo "Veuillez sélectionner des images à télécharger.";
-    }
-}*/
-
 }
 ?>

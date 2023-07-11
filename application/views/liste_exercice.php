@@ -4,7 +4,7 @@
         <?php foreach ($exercice_data as $exercice) { ?>
             <div class="col-md-4 mb-4">
                 <div class="card">
-                    <img src="chemin_vers_l_image" class="card-img-top" alt="Image du exercice">
+                    <img src="<?php echo base_url(); ?>uploads/<?php echo $exercice->sary; ?>" class="card-img-top" alt="Image du exercice">
                     <div class="card-body">
                         <h5 class="card-title"><?php echo $exercice->nom; ?></h5>
                         <p class="card-text">Durée : <?php echo $exercice->sary; ?></p>

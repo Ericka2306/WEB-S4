@@ -4,10 +4,10 @@
         <?php foreach ($plat_data as $plat) { ?>
             <div class="col-md-4 mb-4">
                 <div class="card">
-                    <img src="chemin_vers_l_image" class="card-img-top" alt="Image du plat">
+                    <img src="<?php echo base_url() ; ?>uploads/<?php echo $plat->sary; ?>" class="card-img-top" alt="Image du plat">
                     <div class="card-body">
                         <h5 class="card-title"><?php echo $plat->nom; ?></h5>
-                        <p class="card-text">Durée : <?php echo $plat->sary; ?></p>
+                        <p class="card-text">Durée : </p>
                         <a href="<?php echo base_url('ControllerBack/modifier_plat/'.$plat->id); ?>" class="btn btn-primary">modifier</a>
                     </div>
                 </div>
