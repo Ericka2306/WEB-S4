@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
 
     <title>Hexashop - Product Listing Page</title>
@@ -29,8 +31,6 @@ TemplateMo 571 Hexashop
 https://templatemo.com/tm-571-hexashop
 
 -->
-<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-   
     </head>
     
     <body>
@@ -59,29 +59,12 @@ https://templatemo.com/tm-571-hexashop
                         <!-- ***** Logo End ***** -->
                         <!-- ***** Menu Start ***** -->
                         <ul class="nav">
-                            <li class="scroll-to-section"><a href="<?php echo site_url('Control_code/insert_code') ?>" class="active">porte-monnaie:</a></li>
-                            <li class="scroll-to-section"><a href="index.html">Men's</a></li>
-                            <li class="scroll-to-section"><a href="index.html">Women's</a></li>
-                            <li class="scroll-to-section"><a href="index.html">Kid's</a></li>
-                            <li class="submenu">
-                                <a href="javascript:;">Pages</a>
-                                <ul>
-                                    <li><a href="about.html">About Us</a></li>
-                                    <li><a href="products.html">Products</a></li>
-                                    <li><a href="single-product.html">Single Product</a></li>
-                                    <li><a href="contact.html">Contact Us</a></li>
-                                </ul>
-                            </li>
-                            <li class="submenu">
-                                <a href="javascript:;">Features</a>
-                                <ul>
-                                    <li><a href="#">Features Page 1</a></li>
-                                    <li><a href="#">Features Page 2</a></li>
-                                    <li><a href="#">Features Page 3</a></li>
-                                    <li><a rel="nofollow" href="https://templatemo.com/page/4" target="_blank">Template Page 4</a></li>
-                                </ul>
-                            </li>
-                            <li class="scroll-to-section"><a href="index.html">Explore</a></li>
+                            <li class="scroll-to-section"><a href="<?php echo base_url('#'); ?>" class="active">Programme</a></li>
+                            <li class="scroll-to-section"><a href="<?php echo base_url('ControllerBack/liste_regime'); ?>">Regime</a></li>
+                            <li class="scroll-to-section"><a href="<?php echo base_url('ControllerBack/liste_plat'); ?>">Plat</a></li>
+                            <li class="scroll-to-section"><a href="<?php echo base_url('ControllerBack/liste_sport'); ?>">Sport</a></li>
+                            <li class="scroll-to-section"><a href="<?php echo base_url('ControllerBack/liste_exercice'); ?>">Exercice</a></li>
+                            <li class="scroll-to-section"><a href="<?php echo base_url('statController/liste_statistique'); ?>">Statistiques</a></li>
                         </ul>        
                         <a class='menu-trigger'>
                             <span>Menu</span>
@@ -92,18 +75,5 @@ https://templatemo.com/tm-571-hexashop
             </div>
         </div>
     </header>
-    <!-- ***** Header Area End ***** -->
-
-    <!-- ***** Main Banner Area Start ***** -->
     <div class="page-heading" id="top">
-        <!-- <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="inner-content">
-                        <h2>Check Our Products</h2>
-                        <span>Awesome &amp; Creative HTML CSS layout by TemplateMo</span>
-                    </div>
-                </div>
-            </div>
-        </div> -->
     </div>
