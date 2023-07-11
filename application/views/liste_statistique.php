@@ -3,7 +3,7 @@
     <ul class="list-group">
         <li class="list-group-item">
             <i class="fas fa-users"> </i>
-            <a href="#">Clients</a>
+            <a href="../ClientController/historique_activites">Clients</a>
         </li>
         <li class="list-group-item">
             <i class="fas fa-money-bill"></i>
@@ -11,7 +11,7 @@
         </li>
         <li class="list-group-item">
             <i class="fas fa-chart-line"></i>
-            <a href="liste_recette">Recettes</a>
+            <a href="afficherCourbeMontant">Recettes</a>
         </li>
     </ul>
 </div>

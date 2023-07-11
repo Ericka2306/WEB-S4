@@ -8,10 +8,13 @@ class ClientController extends CI_Controller {
         $this->load->model('Client');
         
         $userId = "";
-        if($this->input->post("userId")!=""){
+        if($this->input->post("userAncien")){
+            $userId = $this->input->post("userAncien");
+        }
+        if($this->input->post("userId")){
             $userId = $this->input->post("userId");
         }else{
-            $userId = $this->input->post("userAncien");
+            $userId = 2;
         }
         
         $data['poids'] = $this->Profil->getProfilPoids($userId);
@@ -19,7 +22,7 @@ class ClientController extends CI_Controller {
         $data['results'] = $this->Client->getHistoriqueActivite($userId);
         $data['utilisateurs'] = $this->Client->getAllUser();
         $data['page'] = 'Historique_Acahat';
-        $this->load->view('template/template',$data);
+        $this->load->view('template_back/template',$data);
    }
 }
 ?>
