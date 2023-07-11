@@ -70,7 +70,7 @@ class StatController extends CI_Controller {
         $data['dates'] = json_encode($dates);
         $data['montants'] = json_encode($montants);
 
-        $this->load->view('template/template', $data);
+        $this->load->view('template_back/template', $data);
     }
 
 }

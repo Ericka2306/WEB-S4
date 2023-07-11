@@ -57,7 +57,16 @@
       <div class="col-md-12">
         <div class="login-form">
           <h2>Inscription</h2>
+      
           <form action="inscriptionSante" method="post">
+
+          <label>Objectif</label><br>
+            <?php foreach ($objectif as $row) : ?>
+              <input type="radio" name="objectif" value="<?php echo $row->id ?>" id="genre-<?php echo $row->id ?>" required>
+              <label for="genre-<?php echo $row->id ?>"><?php echo $row->objectif ?></label>
+              <br>
+              <?php endforeach; ?>
+
             <div class="form-group">
                 <label>Taille</label>
                 <input type="text" class="form-control" placeholder="Taille" name="taille">
@@ -79,6 +88,3 @@
   </div>
 </body>
 </html>
-
-<!------ Include the above in your HEAD tag ---------->
-

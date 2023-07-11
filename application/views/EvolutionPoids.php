@@ -10,15 +10,7 @@
 </div>
 
 <div class="container mt-5">
-<h2>Evolution de votre poids : </h2>
-    <?php echo form_open('ClientController/historique_activites'); ?>
-        <select name="userId" class="form-select" aria-label="Choisir une option">
-            <?php foreach ($utilisateurs as $row) : ?>
-                <option value= <?php echo $row->id ?> > <?php echo $row->nom ?> <option>
-            <?php endforeach; ?>
-        </select>
-        <input type="submit" value="ok">
-    <?php echo form_close(); ?>
+<h2>Evolution de votre poids : </h2>0
 <canvas id="graphique" width="800" height="400"></canvas>
 </div>
 <script>
