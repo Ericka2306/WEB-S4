@@ -156,8 +156,8 @@ class Profil extends CI_Model{
         $pdf->Output('programme.pdf', 'D');
     }
 
-    public function uploadImages()
-{
+    /*public function uploadImages()
+    {
     // Vérifier s'il y a des fichiers sélectionnés
     if (!empty($_FILES['images']['name'][0])) {
         // Configuration des paramètres d'upload
@@ -201,7 +201,7 @@ class Profil extends CI_Model{
         // Aucun fichier sélectionné
         echo "Veuillez sélectionner des images à télécharger.";
     }
-}
+}*/
 
 }
 ?>
