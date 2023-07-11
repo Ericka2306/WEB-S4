@@ -11,7 +11,7 @@ class Control_code extends CI_Controller {
         $data['utilisateur']=$this->Utilisateur->select_utilisateur($_SESSION['userId']);
         $data['code'] = $this->code->get_code();
         $data['page']='code';
-        $this->load->view('template/template',$data);
+        $this->load->view('template_back/template',$data);
     }
     public function reserver() {
         $id=$this->input->post('code');
@@ -24,6 +24,16 @@ class Control_code extends CI_Controller {
         $this->load->model('code');
         $this->code->reserver($id,$update);
         $data['page']='index';
+        $this->load->view('template_back/template',$data);
+    }
+    public function confirmer_code() {
+        session_start();
+
+        $this->load->model('code');
+        $this->load->model('Utilisateur');
+        $data['utilisateur']=$this->Utilisateur->select_utilisateur($_SESSION['userId']);
+        $data['code'] = $this->code->get_code_reserve();
+        $data['page']='back_code';
         $this->load->view('template/template',$data);
     }
     public function confirmer_code() {
