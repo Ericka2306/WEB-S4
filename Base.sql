@@ -112,7 +112,7 @@ CREATE TABLE Depense(
     id serial PRIMARY KEY,
     designation varchar(255),
     prixUnitaire double precision,
-    qte double precision
+    quantite double precision
 );
 
 INSERT INTO Plat (nom, sary)
@@ -122,3 +122,9 @@ VALUES
     ('Plat 3', 'photo plat 3'),
     ('Plat 4', 'photo plat 4'),
     ('Plat 5', 'photo plat 5');
+
+INSERT INTO depense (date_depense,designation, prixUnitaire, quantite)
+VALUES
+    ('02-06-23','Carotte', 1.99, 50),
+    ('02-06-23','Pomme', 2.99, 30),
+    ('02-06-23','Encre', 0.99, 100);
