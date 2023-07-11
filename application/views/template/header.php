@@ -63,6 +63,7 @@ https://templatemo.com/tm-571-hexashop
                         <ul class="nav">
                             <li class="scroll-to-section"><a href="<?php echo base_url('log_out'); ?>"><i class="fas fa-sign-out-alt"></i> Déconnexion</a></li>
                         </ul>         
+
                         <a class='menu-trigger'>
                             <span>Menu</span>
                         </a>

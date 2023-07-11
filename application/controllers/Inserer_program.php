@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Welcome extends CI_Controller {
+class Inserer_program extends CI_Controller {
 
 	/**
 	 * Index Page for this controller.
@@ -20,13 +20,22 @@ class Welcome extends CI_Controller {
 	 */
 	public function index()
 	{
-		$data['page']='liste_program';
-		$this->load->model('Utilisateur');
-		$this->load->model('Programme');
-		$data['utilisateur']=$this->Utilisateur->select_utilisateur(1);
-		$data['regime']=$this->Programme->select_programme_correspondant(1,10,15);
+		$data['page']='index';
+		$this->load->view('template/template',$data);
+	}	
+	public function contact()
+	{
+		$data['page']='contact';
+		$this->load->view('template/template',$data);
+	}	
+    public function program(){
+		$data['page']='insert_program';
+		$this->load->model('sport');
+		$this->load->model('Regime');
+		$data['exercice']=$this->sport->select_sport();
+		$data['Regime']=$this->Regime->select_regime();
 		$this->load->view('template/template',$data);
 		
-	}	
-		
+    }	
 }
+?>
