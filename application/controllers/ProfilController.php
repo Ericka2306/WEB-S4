@@ -60,10 +60,7 @@ class ProfilController extends CI_Controller {
         if($taille!=$tailleA || $poids!=$poidsA){
             $this->Profil->addProfil($id , $taille,$poids);
         }
-        // Appeler la fonction de mise à jour dans le modèle
-        // $this->Profil->update_utilisateur($id, $data);
-    
-        // Rediriger vers une page de succès ou afficher un message de succès
+        redirect("ProfilController/poids_evolution");
     }
     public function pdf(){
         $this->load->model('Profil');

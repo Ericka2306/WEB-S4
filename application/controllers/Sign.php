@@ -33,18 +33,17 @@ class Sign extends CI_Controller {
         if(count($profil)==1){
             $utilisateur = $this->Profil->get_utilisateur($profil[0]->id);
 
+            session_start();
+            $_SESSION['userId'] = $profil[0]->id;
+            
             if ($utilisateur->estadmin == 1) {
-                $data['page'] = 'accueil_back';
+                $data['page'] = 'back_code';
                 $this->load->view('template_back/template',$data);
             }
             else {
                 redirect("Welcome/");
             }
-                $this->load->view('template/template',$data);
-            }
-
-            session_start();
-            $_SESSION['userId'] = $profil[0]->id;
+            
         }else{
             redirect('Sign/sign_in');
         }

@@ -70,7 +70,7 @@ https://templatemo.com/tm-571-hexashop
                             <li class="scroll-to-section"><a href="<?php echo base_url('ControllerBack/liste_sport'); ?>">Sport</a></li>
                             <li class="scroll-to-section"><a href="<?php echo base_url('ControllerBack/liste_exercice'); ?>">Exercice</a></li>
                             <li class="scroll-to-section"><a href="<?php echo base_url('statController/liste_statistique'); ?>">Statistiques</a></li>
-                            <li class="scroll-to-section"><a href="<?php echo base_url('log_out'); ?>"><i class="fas fa-sign-out-alt"></i> Déconnexion</a></li>
+                            <li class="scroll-to-section"><a href="<?php echo base_url('Sign/logout'); ?>"><i class="fas fa-sign-out-alt"></i> Déconnexion</a></li>
                         </ul>        
                         <a class='menu-trigger'>
                             <span>Menu</span>
