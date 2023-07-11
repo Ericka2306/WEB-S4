@@ -215,7 +215,7 @@ class ControllerBack extends CI_Controller {
         if ($this->input->post()) {
             // Récupérer les données du formulaire
             $nom = $this->input->post('nom');
-            $sary = $this->input->post('sary');
+            $sary = $_FILES['image']['name'];
 
             $this->Plat->create_plat(array(
                 'nom' => $nom,

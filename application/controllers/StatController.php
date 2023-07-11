@@ -45,4 +45,25 @@ class StatController extends CI_Controller {
         }
         $this->load->view('template_back/template',$data);
     }
+
+    public function afficherCourbeMontant() {
+        $this->load->database();
+        $this->load->model('Client');
+        $donnees = $this->Client->get_recette();
+
+        $dates = [];
+        $montants = [];
+
+        foreach ($donnees as $donnee) {
+            $dates[] = $donnee->dateachat;
+            $montants[] = $donnee->montant;
+        }
+
+        $data['page'] = 'recette';
+        $data['dates'] = json_encode($dates);
+        $data['montants'] = json_encode($montants);
+
+        $this->load->view('template/template', $data);
+    }
+
 }
