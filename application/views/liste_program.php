@@ -27,6 +27,7 @@
                         <div class="down-content">
                             <h4><?php  echo $rg->id_regime?></h4>
                             <span></span>
+
                             <span>$120.00</span>
                             <ul class="stars">
                                 <li><i class="fa fa-star"></i></li>

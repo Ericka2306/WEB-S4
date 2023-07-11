@@ -9,10 +9,6 @@
            $this->db->where('id', $id);
             return $this->db->get('utilisateur')->row();
         }
-        public function getProgrammeUser($userId){
-            $sql="select id_programme from user_programme where id_utilisateur =$userId";
-            $query=$this->db->query($sql);
-            return $query->row();
-        }
+
     }
 ?>

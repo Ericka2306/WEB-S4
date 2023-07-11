@@ -28,10 +28,9 @@ class Sign extends CI_Controller {
         $mdp = $this->input->post('mdp');
 
         $profil = $this->Profil->getProfil($email,$mdp);
+
+
         if(count($profil)==1){
-<<<<<<< Updated upstream
-            $data['page'] = 'contact.php';
-=======
             $utilisateur = $this->Profil->get_utilisateur($profil[0]->id);
 
             if ($utilisateur->estadmin == 1) {
@@ -39,14 +38,13 @@ class Sign extends CI_Controller {
                 $this->load->view('template_back/template',$data);
             }
             else {
-                // $data['page'] = 'contact';
-                // $this->load->view('template/template',$data);
                 redirect("Welcome/");
             }
->>>>>>> Stashed changes
+                $this->load->view('template/template',$data);
+            }
+
             session_start();
             $_SESSION['userId'] = $profil[0]->id;
-            $this->load->view('template/template',$data);
         }else{
             redirect('Sign/sign_in');
         }
