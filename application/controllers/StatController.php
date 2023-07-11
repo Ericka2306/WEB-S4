@@ -8,6 +8,13 @@ class StatController extends CI_Controller {
         $this->load->model('Depense');
     }
 
+    public function liste_statistique() {
+        $data['page']='liste_statistique';
+        $this->load->view('template_back/template',$data);
+
+
+    }
+
     public function liste_depense() {
 
         $depenses = $this->Depense->select_depense();
