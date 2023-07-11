@@ -12,6 +12,10 @@ class Profil extends CI_Model{
         $query = $this->db->query("SELECT * from genre");
         return $query->result();
     }
+    public function getObjectif(){
+        $query = $this->db->query("SELECT * from objectif");
+        return $query->result();
+    }
     public function insertUser($id_genre,$nom,$mail,$motdepasse){
         $data = array(
             'id_genre' => $id_genre,
@@ -156,6 +160,7 @@ class Profil extends CI_Model{
         $pdf->Output('programme.pdf', 'D');
     }
 
+<<<<<<< Updated upstream
     public function upload() 
 	{
         $this->load->helper('url', 'form');	
@@ -182,5 +187,8 @@ class Profil extends CI_Model{
             $this->load->view('imageupload_success', $data);
         }
     }
+=======
+
+>>>>>>> Stashed changes
 }
 ?>

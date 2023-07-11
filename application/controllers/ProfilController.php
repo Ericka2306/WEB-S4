@@ -66,6 +66,11 @@ class ProfilController extends CI_Controller {
         // Rediriger vers une page de succès ou afficher un message de succès
     }
     public function pdf(){
+        $this->load->helper('date');
+        $this->load->model('Utilisateur');
+        session_start();
+        $id_programme = $this->Utilisateur->getProgrammeUser($_SESSION['userId']);
+        echo $id_programme;
         $this->load->model('Profil');
         $this->load->database();
         $this->Profil->generer_export_pdf(1);
