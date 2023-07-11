@@ -15,6 +15,7 @@ class ClientController extends CI_Controller {
         }
         
         $data['poids'] = $this->Profil->getProfilPoids($userId);
+        $data['id'] = $userId;
         $data['results'] = $this->Client->getHistoriqueActivite($userId);
         $data['utilisateurs'] = $this->Client->getAllUser();
         $data['page'] = 'Historique_Acahat';

@@ -75,7 +75,7 @@
 <?php echo form_open('ClientController/historique_activites'); ?>
     <p>
         <strong>Selectionner Utilisateur :</strong>
-        <input type="hidden" name="userAncien" value="<?php echo $results[0]->id ?>">
+        <input type="hidden" name="userAncien" value="<?php echo $id ?>">
             <select name="userId" class="form-select" aria-label="Choisir une option">
                 <?php foreach ($utilisateurs as $row) : ?>
                     <option value= <?php echo $row->id ?> > <?php echo $row->nom ?> <option>

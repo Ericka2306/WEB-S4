@@ -1,4 +1,16 @@
+
 <div class="container mt-5">
+    <h2>Details : </h2>
+    <p style="margin-left:50px"><strong>Nom : </strong> <?php echo $user->nom ?></p>
+    <p style="margin-left:50px"><strong>Mail : </strong> <?php echo $user->mail ?></p>
+    <p style="margin-left:50px"><strong>Caisse : </strong> <?php echo $user->caisse ?> Ar</p>
+    <p style="margin-left:50px"><strong>Taille : </strong> <?php echo $profil->taille ?> m</p>
+    <p style="margin-left:50px"><strong>Poids : </strong> <?php echo $profil->poids ?> Kg</p>
+    <p style="margin-left:50px"><strong>IMC : </strong> <?php echo $IMC ?> Kg/m2</p>
+</div>
+
+<div class="container mt-5">
+<h2>Evolution de votre poids : </h2>
     <?php echo form_open('ClientController/historique_activites'); ?>
         <select name="userId" class="form-select" aria-label="Choisir une option">
             <?php foreach ($utilisateurs as $row) : ?>

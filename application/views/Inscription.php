@@ -56,22 +56,33 @@
     <div class="row">
       <div class="col-md-12">
         <div class="login-form">
-          <h2>Login</h2>
-          <form action="log_in_validation" method="POST">
-            
-                  <div class="form-group">
-                     <label>E-Mail</label>
-                     <input type="text" class="form-control" placeholder="E-Mail" name="mail">
-                  </div>
-                  <div class="form-group">
-                     <label>Password</label>
-                     <input type="password" class="form-control" placeholder="Password" name="mdp">
-                  </div>
-                  <button type="submit" class="btn btn-primary btn-block">Login</button>
-         </form>
-         <br>
-        <a href="sign_up">S'inscrire</a>
+          <h2>Inscription</h2>
+          <form action="inscriptionInfo" method="post">
+                <div class="form-group">
+                    <label>Nom : </label>
+                    <input type="text" class="form-control" placeholder="Nom" name="nom">
+                </div>
+                <div class="form-group">
+                    <label>Genre :</label>
+                    <?php foreach ($genre as $row) : ?>
+                        <br>
+                    <input type="radio" name="genre" value= <?php echo $row->id ?> > <?php echo $row->genre ?>
+                    <?php endforeach; ?>
+                </div>
 
+                <div class="form-group">
+                    <label>E-Mail :</label>
+                    <input type="text" class="form-control" placeholder="E-Mail" name="mail">
+                </div>
+
+                <div class="form-group">
+                    <label>Mot De Passe :</label>
+                    <input type="text" class="form-control" placeholder="Mot De Passe" name="mdp">
+                </div>
+                <button type="submit" class="btn btn-primary btn-block">S'inscrire</button>
+        </form>
+        <br>
+        <a href="sign_in">Se connecter</a>
         </div>
       </div>
     </div>
