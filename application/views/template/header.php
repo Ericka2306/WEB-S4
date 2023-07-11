@@ -59,7 +59,7 @@ https://templatemo.com/tm-571-hexashop
                         <!-- ***** Logo End ***** -->
                         <!-- ***** Menu Start ***** -->
                         <ul class="nav">
-                            <li class="scroll-to-section"><a href="index.html" class="active">Home</a></li>
+                            <li class="scroll-to-section"><a href="<?php echo site_url('Control_code/insert_code') ?>" class="active">porte-monnaie:</a></li>
                             <li class="scroll-to-section"><a href="index.html">Men's</a></li>
                             <li class="scroll-to-section"><a href="index.html">Women's</a></li>
                             <li class="scroll-to-section"><a href="index.html">Kid's</a></li>
