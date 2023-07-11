@@ -28,21 +28,5 @@ class Welcome extends CI_Controller {
 		$this->load->view('template/template',$data);
 		
 	}	
-	public function contact()
-	{
-		$data['page']='contact';
-		$this->load->view('template/template',$data);
-	}	
-	public function program(){
-		$data['page']='liste_program';
-		$this->load->model('Programme');
-		$data['regime']=$this->Programme->select_programme_correspondant(1,10,15);
-		$this->load->view('template/template',$data);
-	}	
-	public function regime(){
-		$data['page']='liste_program';
-		//$this->load->model('Regime');
-		//$data['regimes']=$this->Regime->select_regime();
-		$this->load->view('template/template',$data);
-	}	
+		
 }
