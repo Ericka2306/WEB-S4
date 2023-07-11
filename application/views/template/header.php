@@ -61,8 +61,16 @@ https://templatemo.com/tm-571-hexashop
                         <!-- ***** Logo End ***** -->
                         <!-- ***** Menu Start ***** -->
                         <ul class="nav">
-      
 
+
+                            <li class="scroll-to-section"><a href="<?php echo site_url('ProfilController/pdf') ?>">Exporter Programme</a></li>
+                            <li class="scroll-to-section"><a href="<?php echo site_url('Control_code/insert_code') ?>">Porte-monnaie</a></li>
+                            <li class="scroll-to-section"><a href="<?php echo site_url('Welcome') ?>">Accueil</a></li>
+                            <li class="scroll-to-section"><a href="<?php echo site_url('ProfilController/poids_evolution')?>">Statistique</a></li>
+                            <li class="scroll-to-section"><a href="<?php echo site_url('ProfilController/modifier')?>">Modifier</a></li>
+                            <li class="scroll-to-section"><a href="<?php echo base_url('log_out'); ?>"><i class="fas fa-sign-out-alt"></i> Déconnexion</a></li>
+
+                        </ul>        
                         <a class='menu-trigger'>
                             <span>Menu</span>
                         </a>

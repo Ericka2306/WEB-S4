@@ -4,7 +4,7 @@
         <?php foreach ($regime_data as $regime) { ?>
             <div class="col-md-4 mb-4">
                 <div class="card">
-                    <img src="chemin_vers_l_image" class="card-img-top" alt="Image du régime">
+                    <!-- <img src="" class="card-img-top" alt="Image du régime"> -->
                     <div class="card-body">
                         <h5 class="card-title"><?php echo $regime->nom; ?></h5>
                         <p class="card-text">Prix : <?php echo $regime->prix; ?></p>
@@ -17,6 +17,5 @@
         <a href="<?php echo base_url('ControllerBack/create_regime'); ?>">Ajouter un regime</a>
 
     </div>
-</
 
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
