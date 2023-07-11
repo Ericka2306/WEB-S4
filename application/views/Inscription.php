@@ -1,27 +1,35 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-  <title>Login - Thème Noir</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inscription - Thème Noir</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
   <style>
     body {
       background-color: #333;
       color: #fff;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
     }
 
     .login-form {
-      max-width: 700px;
+      max-width: 400px;
       margin: 0 auto;
       background-color: #222;
       padding: 30px;
       border-radius: 5px;
-      margin-top: 200px;
       box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
     }
 
     .login-form h2 {
       text-align: center;
       margin-bottom: 30px;
+      font-family: 'Segoe UI', sans-serif;
+      color: #fff;
     }
 
     .login-form .form-control {
@@ -43,6 +51,7 @@
       border-color: green;
       border-radius: 20px;
       padding: 10px 20px;
+      width: 100%;
     }
 
     .login-form .btn-primary:hover {
@@ -51,44 +60,42 @@
     }
   </style>
 </head>
+
 <body>
   <div class="container">
-    <div class="row">
-      <div class="col-md-12">
+    <div class="row justify-content-center">
+      <div class="col-md-6">
         <div class="login-form">
-          <h2>Inscription</h2>
-          <form action="inscriptionInfo" method="post">
-                <div class="form-group">
-                    <label>Nom : </label>
-                    <input type="text" class="form-control" placeholder="Nom" name="nom">
-                </div>
-                <div class="form-group">
-                    <label>Genre :</label>
-                    <?php foreach ($genre as $row) : ?>
-                        <br>
-                    <input type="radio" name="genre" value= <?php echo $row->id ?> > <?php echo $row->genre ?>
-                    <?php endforeach; ?>
-                </div>
-
-                <div class="form-group">
-                    <label>E-Mail :</label>
-                    <input type="text" class="form-control" placeholder="E-Mail" name="mail">
-                </div>
-
-                <div class="form-group">
-                    <label>Mot De Passe :</label>
-                    <input type="text" class="form-control" placeholder="Mot De Passe" name="mdp">
-                </div>
-                <button type="submit" class="btn btn-primary btn-block">S'inscrire</button>
-        </form>
-        <br>
-        <a href="sign_in">Se connecter</a>
+          <h2 class="mb-4"><i class="fas fa-user-plus mr-2"></i> Inscription</h2>
+          <form action="inscriptionInfo" method="POST">
+            <div class="form-group">
+              <label for="nom"><i class="fas fa-user mr-2"></i> Nom :</label>
+              <input type="text" class="form-control" id="nom" placeholder="Nom" name="nom" required>
+            </div>
+            <div class="form-group">
+              <label><i class="fas fa-venus-mars mr-2"></i> Genre :</label>
+              <br>
+              <?php foreach ($genre as $row) : ?>
+              <input type="radio" name="genre" value="<?php echo $row->id ?>" id="genre-<?php echo $row->id ?>" required>
+              <label for="genre-<?php echo $row->id ?>"><?php echo $row->genre ?></label>
+              <br>
+              <?php endforeach; ?>
+            </div>
+            <div class="form-group">
+              <label for="email"><i class="fas fa-envelope mr-2"></i> E-Mail :</label>
+              <input type="email" class="form-control" id="email" placeholder="E-Mail" name="mail" required>
+            </div>
+            <div class="form-group">
+              <label for="password"><i class="fas fa-lock mr-2"></i> Mot De Passe :</label>
+              <input type="password" class="form-control" id="password" placeholder="Mot De Passe" name="mdp" required>
+            </div>
+            <button type="submit" class="btn btn-primary"><i class="fas fa-user-plus mr-2"></i> S'inscrire</button>
+          </form>
+          <p class="mt-3 text-center">Vous avez déjà un compte ? <a href="sign_in">Se connecter</a></p>
         </div>
       </div>
     </div>
   </div>
 </body>
+
 </html>
-
-<!------ Include the above in your HEAD tag ---------->
-
