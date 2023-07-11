@@ -62,29 +62,16 @@ https://templatemo.com/tm-571-hexashop
                         <!-- ***** Menu Start ***** -->
                         <ul class="nav">
 
-                            <li class="scroll-to-section"><a href="<?php echo site_url('Control_code/insert_code') ?>" class="active">porte-monnaie</a></li>
-                            <li class="scroll-to-section"><a href="index.html">Men's</a></li>
-                            <li class="scroll-to-section"><a href="index.html">Women's</a></li>
-                            <li class="scroll-to-section"><a href="index.html">Kid's</a></li>
-                            <li class="submenu">
-                                <a href="javascript:;">Pages</a>
-                                <ul>
-                                    <li><a href="about.html">About Us</a></li>
-                                    <li><a href="products.html">Products</a></li>
-                                    <li><a href="single-product.html">Single Product</a></li>
-                                    <li><a href="contact.html">Contact Us</a></li>
-                                </ul>
-                            </li>
-                            <li class="submenu">
-                                <a href="javascript:;">Features</a>
-                                <ul>
-                                    <li><a href="#">Features Page 1</a></li>
-                                    <li><a href="#">Features Page 2</a></li>
-                                    <li><a href="#">Features Page 3</a></li>
-                                    <li><a rel="nofollow" href="https://templatemo.com/page/4" target="_blank">Template Page 4</a></li>
-                                </ul>
-                            </li>
-                            <li class="scroll-to-section"><a href="index.html">Explore</a></li>
+
+
+
+                            <li class="scroll-to-section"><a href="<?php echo site_url('ProfilController/pdf') ?>">Exporter Programme</a></li>
+                            <li class="scroll-to-section"><a href="<?php echo site_url('Control_code/insert_code') ?>">Porte-monnaie</a></li>
+                            <li class="scroll-to-section"><a href="<?php echo site_url('Welcome') ?>">Accueil</a></li>
+                            <li class="scroll-to-section"><a href="<?php echo site_url('ProfilController/poids_evolution')?>">Statistique</a></li>
+                            <li class="scroll-to-section"><a href="<?php echo site_url('ProfilController/modifier')?>">Modifier</a></li>
+                            <li class="scroll-to-section"><a href="<?php echo base_url('log_out'); ?>"><i class="fas fa-sign-out-alt"></i> Déconnexion</a></li>
+
                         </ul>        
 
                         <a class='menu-trigger'>

@@ -12,6 +12,10 @@ class Profil extends CI_Model{
         $query = $this->db->query("SELECT * from genre");
         return $query->result();
     }
+    public function getObjectif(){
+        $query = $this->db->query("SELECT * from objectif");
+        return $query->result();
+    }
     public function insertUser($id_genre,$nom,$mail,$motdepasse){
         $data = array(
             'id_genre' => $id_genre,
@@ -155,6 +159,7 @@ class Profil extends CI_Model{
         // Générer le fichier PDF
         $pdf->Output('programme.pdf', 'D');
     }
+
 
 }
 ?>

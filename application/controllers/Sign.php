@@ -2,6 +2,13 @@
 defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Sign extends CI_Controller {
+
+    public function logout(){
+        session_start();
+        session_destroy();
+        redirect("");
+    }
+    
     public function sign_up(){
         $this->load->database();
         $this->load->model('Profil');
@@ -31,9 +38,11 @@ class Sign extends CI_Controller {
                 $this->load->view('template_back/template',$data);
             }
             else {
-                $data['page'] = 'contact';
+                redirect("Welcome/");
+            }
                 $this->load->view('template/template',$data);
             }
+
             session_start();
             $_SESSION['userId'] = $profil[0]->id;
         }else{
@@ -54,6 +63,7 @@ class Sign extends CI_Controller {
         session_start();
         $_SESSION['userId'] = $result['id'];
         $data['userId'] = $result['id'];
+        $data['objectif'] = $this->Profil->getObjectif();
         $this->load->view('Inscription_sante' , $data);
     }
     public function inscriptionSante(){
