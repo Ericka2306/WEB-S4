@@ -56,22 +56,23 @@
     <div class="row">
       <div class="col-md-12">
         <div class="login-form">
-          <h2>Login</h2>
-          <form action="log_in_validation" method="POST">
-            
-                  <div class="form-group">
-                     <label>E-Mail</label>
-                     <input type="text" class="form-control" placeholder="E-Mail" name="mail">
-                  </div>
-                  <div class="form-group">
-                     <label>Password</label>
-                     <input type="password" class="form-control" placeholder="Password" name="mdp">
-                  </div>
-                  <button type="submit" class="btn btn-primary btn-block">Login</button>
-         </form>
-         <br>
-        <a href="sign_up">S'inscrire</a>
+          <h2>Inscription</h2>
+          <form action="inscriptionSante" method="post">
+            <div class="form-group">
+                <label>Taille</label>
+                <input type="text" class="form-control" placeholder="Taille" name="taille">
+            </div>
 
+            <div class="form-group">
+                <label>Poids</label>
+                <input type="text" class="form-control" placeholder="Poids" name="poids">
+            </div>
+            <input type="hidden" name="id" value=<?php echo $userId ?>>
+
+            <button type="submit" class="btn btn-primary btn-block">S'inscrire</button>
+
+
+        </form>
         </div>
       </div>
     </div>
