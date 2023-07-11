@@ -21,6 +21,8 @@ CREATE TABLE Utilisateur(
     FOREIGN KEY(id_genre) REFERENCES Genre(id)
 );
 
+
+
 CREATE TABLE Profil(
     id_utilisateur int,
     taille double precision,
@@ -30,18 +32,25 @@ CREATE TABLE Profil(
     FOREIGN KEY(id_utilisateur) REFERENCES Utilisateur(id)
 );
 
-CREATE TABLE Regime(
+
+
+CREATE TABLE regime(
+
     id serial PRIMARY KEY,
     prix double precision,
     nom varchar(20),
     duree int
+
 );
+
 
 CREATE TABLE Sport(
     id serial PRIMARY KEY,
     nom varchar(20),
     duree int
+
 );
+
 
 
 CREATE TABLE Plat(
@@ -49,6 +58,7 @@ CREATE TABLE Plat(
     nom varchar(20),
     sary varchar(255)
 );
+
 
 
 CREATE TABLE Exercice(
@@ -104,6 +114,7 @@ CREATE TABLE User_Programme(
 );
 
 
+
 CREATE TABLE HistoriqueAchat(
     id serial PRIMARY KEY,
     id_user_programme int,
@@ -112,7 +123,6 @@ CREATE TABLE HistoriqueAchat(
     etat int,
     FOREIGN KEY(id_user_programme) REFERENCES User_Programme(id)
 );
-
 
 CREATE TABLE Code(
     id serial PRIMARY KEY,
@@ -126,7 +136,7 @@ CREATE TABLE Depense(
     id serial PRIMARY KEY,
     designation varchar(255),
     prixUnitaire double precision,
-    qte double precision,
+    quantite double precision
     date_depense date
 );
 
@@ -290,3 +300,19 @@ alter table sport drop column intervalle_d;
 alter table sport drop column intervalle_f;
 alter table Programme add column intervalle_d int;
 alter table Programme add column intervalle_f int;
+
+
+
+INSERT INTO Plat (nom, sary)
+VALUES
+    ('Plat 1', 'photo plat 1'),
+    ('Plat 2', 'photo plat 2'),
+    ('Plat 3', 'photo plat 3'),
+    ('Plat 4', 'photo plat 4'),
+    ('Plat 5', 'photo plat 5');
+
+INSERT INTO depense (date_depense,designation, prixUnitaire, quantite)
+VALUES
+    ('02-06-23','Carotte', 1.99, 50),
+    ('02-06-23','Pomme', 2.99, 30),
+    ('02-06-23','Encre', 0.99, 100);
