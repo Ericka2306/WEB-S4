@@ -1,5 +1,5 @@
 <div class="container mt-5">
-    <form action="create_exercice" method="POST">
+    <form action="create_exercice" method="POST" enctype="multipart/form-data">
       <div class="form-group">
       <h2>Ajouter un exercice</h2>
       <br>
@@ -8,7 +8,7 @@
       </div>
       <div class="form-group">
         <label for="sary">Sary :</label>
-        <input type="text" class="form-control" id="sary" name="sary" required>
+        <input type="file" class="form-control" id="sary" name="sary" required>
       </div>
 
       <button type="submit" class="btn btn-primary">Ajouter</button>
